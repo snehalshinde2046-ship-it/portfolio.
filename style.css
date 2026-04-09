@@ -14,7 +14,6 @@
   --pastel-gold: #e9d5a6;
   --pastel-orange: #f4e1d2;
 
-  /* ✅ Fixed missing variables */
   --pastel-green: #b8e0d2;
   --pastel-pink: #f7c6d9;
   --pastel-blue: #c7d7f0;
@@ -207,6 +206,30 @@ h2::after {
   color: white;
 }
 
+/* Certificates & Marksheets Images */
+.certificates-list img,
+.marksheets-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificates-list img:hover,
+.marksheets-list img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-hover);
+}
+
+.card img,
+.project-card img,
+.cert-name img {
+  display: block;
+  margin: 0 auto;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -242,7 +265,6 @@ footer p {
   color: var(--text-light);
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
