@@ -12,7 +12,7 @@ function typing(){
 typing();
 
 // year auto
-document.getElementById("year").innerHTML = "© " + new Date().getFullYear() + " Vaishnavi Rokade";
+document.getElementById("year").innerHTML = "© " + new Date().getFullYear() + " snehal shinde";
 
 // image modal for certificates
 const certNames = document.querySelectorAll(".cert-name");
